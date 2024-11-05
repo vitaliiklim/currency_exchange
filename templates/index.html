@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exchange Rates</title>
+</head>
+<body>
+    <h1>Current Exchange Rates</h1>
+    <ul>
+        {% for currency, info in rates.items() %}
+        <li>{{ currency }}: {{ info["value"] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
